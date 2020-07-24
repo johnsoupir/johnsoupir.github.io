@@ -1,0 +1,24 @@
+import markovify
+import tweepy
+
+# Get raw text as string.
+with open("./input") as f:
+    text = f.read()
+
+# Build the model.
+text_model = markovify.Text(text, state_size=5)
+
+# Print five randomly-generated sentences
+#for i in range(1):
+ #   print(text_model.make_short_sentence(140, tries=1000))
+
+# Authenticate to Twitter
+auth = tweepy.OAuthHandler("Z8vNmSD6NBndUE8mdCoDLEiDs", "kMK6LRbiUYbB0BYEDL6Cxidlwj89LtNBdYCAL5SHJII7EbATB7")
+auth.set_access_token("1285089564395216896-EiBRQryH77Fb1cQtVuMWNooj3H32oj", "OrQgWr5E7pCikT3ACPLPSsXAlTuaoU9gREhwGEAX64YWl")
+
+# Create API object
+api = tweepy.API(auth)
+
+# Create a tweet
+api.update_status(text_model.make_short_sentence(140, tries=1000))
+
