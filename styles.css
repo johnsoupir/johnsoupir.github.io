@@ -167,6 +167,22 @@ article {
 }
 
 
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+
+
+.sectionTitle {
+  position: relative;
+  top: 1px;
+  font-family: 'Lato', sans-serif;
+  font-size: 3em;
+
+
+}
 
 
 
@@ -177,14 +193,16 @@ article {
   top: 600px;
   */
   position: relative;
-
-  margin: 200px auto;
+  top: -40px;
+  margin: 120px auto;
   text-align: left;
 }
 
 .blogImage {
   float: left; /* Float the image to the left */
   width: 300px; /* Set a fixed width for the image */
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
   margin-right: 10px;
   
