@@ -13,9 +13,7 @@ nav {
 }
 
 nav ul {
-
   display: inline-block;
-
   list-style-type: none;
   margin: auto;
   padding: 0;
@@ -28,7 +26,6 @@ nav li {
 }
 
 nav a {
-
     background: transparent;
     border: 1.5px solid #fff;
     padding: 5px 25px;
@@ -49,18 +46,16 @@ nav .icon{
 }
 
 li  .logolink{
-    
     width: 20px;
     height: 5%;
-        border: 0px solid #fff;
- }
+    border: 0px solid #fff;
+}
  
 li  .logolink:hover {
     width: 20px;
     height: 20px;
     border: 0px solid #fff;
     background: black;
-
  }
 
 
@@ -84,47 +79,34 @@ html {
 
 header{
   height: 30px;
-    display: flex;
-    height: 10%;
-
+  display: flex;
+  height: 10%;
 }
 
 body {
-
-
   background-image: url("background.jpg");
   background-attachment: fixed;
-  
   background-position-x: 50%;
   background-position-y: 0%;
   background-position-y: 100%;
   animation: bgScroll 60s linear infinite;
-  
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
-  
-  
-  
   min-height: 100%;   
   margin:  0;
   padding: 0;
   height: 100%;
   min-width: 520px;
-     
   width: 100%;
   position: relative;
   top: 200px;
-
 }
 
 @keyframes bgScroll {
     from { background-position-y: 0%; }
     to { background-position-y: 100%; }
 }
-
-
-
 
 .overlay {
   background-color: rgba(200,200,200,0.2);
@@ -136,12 +118,10 @@ body {
   height: 125px;
   width: 500px;
   margin: auto;
-  border-radius: 20px;
-  
+  border-radius: 20px;  
 }
 
 .welcome-text {
-
   color: white;
   font-size: 2em;
   text-align: center;
@@ -162,74 +142,46 @@ body {
 
 }
 
-
 article {
-
   color: white;
   font-size: 1em;
   text-align: center;
- 
-
   transform: translate(-50%, -50%);
-  
   margin: 50% 50%;
   position: relative;
   top: 10px;
   width: 65%;
   padding-bottom: 20px;
-  
-  
 }
-
 
 .logo {
   height: 50px;
   width: 70px; 
-
-
 }
-
 
 p {
   font-family: 'Lato', sans-serif;
 }
 
-
-
-
-
 .sectionTitle {
   position: static;
   font-family: 'Lato', sans-serif;
   font-size: 3em;
-
-
 }
-
-
 
 .subSectionTitle {
   position: static;
   font-family: 'Lato', sans-serif;
   font-size: 1.5em;
   text-align: left;
-
-
 }
-
-
 
 .subSubSectionTitle {
   font-family: 'Lato', sans-serif;
   font-size: 1.2em;
   text-align: left;
   margin-left: 20px;
-
-
 }
-
-
-
 
 .sectionBody {
   font-family: 'Lato', sans-serif;
@@ -243,11 +195,7 @@ p {
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
-
-
-
 
 .blogItem {
   width: 500px; 
@@ -258,7 +206,6 @@ p {
   margin: 40px 40px;
   text-align: left;
   padding: 20px 20px;
-
 }
 
 .blogImage {
@@ -287,32 +234,24 @@ position: relative;
   color: white;
 }
 
-
 .buttons {
   position: relative;
   top: 35px;
   left: 0px;
-   /* Clear the float on the image and caption */
-  /*text-align: center; */ /* Center the buttons horizontally */
-  padding-top: 10px; /* Add 20px padding above the buttons */
-  
+  padding-top: 10px; 
   margin-left: 320px;
 
 }
 
 .buttons button {
-  display: inline-block; /* Display the buttons inline */
-  background-color: #052a42; /* Set a light gray background color */
-  padding: 5px 5px; /* Add 10px padding to the top and bottom, and 20px padding to the left and right */
+  display: inline-block;
+  background-color: #052a42;
+  padding: 5px 5px;
   width: 85px;
   height: line-height;
   border-radius: 10px;
   text-align: center;
   border: 1px solid #0a5b91;
-  
-
-  
- 
 }
 
 .buttons a {
@@ -320,17 +259,7 @@ position: relative;
   color: #333; /* Set the link text color to a dark gray */
   text-align: top;
   color: white;
-   font-family: 'Lato', sans-serif;
-   
+  font-family: 'Lato', sans-serif;
 }
-
-
-
-
-
-
-
-
-
 
 

@@ -6,30 +6,30 @@
     <title>Soupir - Home</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
-<script>
-function startTime() {
-  const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML = "Current Time: " + h + ":" + m + ":" + s;
-  setTimeout(startTime, 1000);
-}
 
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-</script>
+  <script>
+  function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML = "Current Time: " + h + ":" + m + ":" + s;
+    setTimeout(startTime, 1000);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+  </script>
     
   <body onload="startTime()">
     <header>
       <nav>
 	<ul class="icon">
-	      <li> <a class="logolink" href="https://github.com/johnsoupir"> <img src="Images/spinner.webp" alt="github logo" height="15" width="50"  /> </a>  </li>
-            <li> John Soupir </li>
+	  <li> <a class="logolink" href="https://github.com/johnsoupir"> <img src="Images/spinner.webp" alt="github logo" height="15" width="50"  /> </a>  </li>
+          <li> John Soupir </li>
 	</ul>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -38,8 +38,8 @@ function checkTime(i) {
           <li><a href="contact.html">Contact</a></li>
         </ul>
 	<ul class="icon">
-	      <li> <a class="logolink" href="https://github.com/johnsoupir"> <img src="gitlogo.png" alt="github logo" height="20" width="20"  /> </a>  </li>
-	      <li> <a class="logolink" href="https://github.com/johnsoupir"> <img src="Images/youtube-logo.png" alt="github logo" height="25" width="30"  /> </a>  </li>
+	  <li> <a class="logolink" href="https://github.com/johnsoupir"> <img src="gitlogo.png" alt="github logo" height="20" width="20"  /> </a>  </li>
+	  <li> <a class="logolink" href="https://github.com/johnsoupir"> <img src="Images/youtube-logo.png" alt="github logo" height="25" width="30"  /> </a>  </li>
 	</ul>
       </nav>
     </header>
@@ -50,39 +50,11 @@ function checkTime(i) {
     <p class="welcome-text" style="font-size: 1.5em; padding: 10px;">Electrical Engineering Student</p>
     <p class="welcome-text" style="font-size: 0.8em; top: 0px; padding: 0px 20px;">Hi, I'm John Soupir, a senior Electrical Engineering student at the University of Mary in Bismarck North Dakota. Explore this site to learn more about me! </p>
     </div>
-    	<article>
-	</article>
 
-    
-    
-    
- 
-
-<div id="txt" style="color: white;"></div>
-    
-    
-    
+    <article>
+    </article>
+    <div id="txt" style="color: white;"></div>
   </body>
-  
 </html>
-
-
-
-
-
-<!-- 
-
-
-
-
-        <img class="logo" src="logo.png" alt="Logo" />
-
-
-
-
-
-
-
--->
 
 
