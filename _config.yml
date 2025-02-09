@@ -1,0 +1,5 @@
+title: "John Soupir"
+baseurl: ""  # empty unless using a subpath
+url: "http://www.johnsoupir.com"
+highlighter: rouge
+theme: monokai  # theme 
