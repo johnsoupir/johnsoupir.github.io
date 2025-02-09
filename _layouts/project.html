@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} - Soupir</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    {% include sidebar.html %}
+    <div class="main-container">
+      <main class="content">
+        <article class="project-writeup">
+          <h1 class="sectionTitle">{{ page.title }}</h1>
+          
+          {% if page.video %}
+          <video width="320" height="240" controls>
+            <source src="{{ page.video }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          {% endif %}
+          
+          {{ content }}
+        </article>
+      </main>
+    </div>
+    <script src="/assets/js/copy-code.js"></script>
+    <!-- MathJax Configuration in _layouts/project.html if needed -->
+    <script>
+    window.MathJax = {
+        tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    };
+    </script>
+    <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+  </body>
+</html>
