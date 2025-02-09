@@ -1,61 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: "Soupir - Home"
+---
 
-  <head>
-    <meta charset="utf-8"i/>
-    <title>Soupir - Home</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-
-  <script>
-  function startTime() {
-    const today = new Date();
-    let h = today.getHours();
-    let m = today.getMinutes();
-    let s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML = "Current Time: " + h + ":" + m + ":" + s;
-    setTimeout(startTime, 1000);
-  }
-  function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-  }
-  </script>
-    
-  <body onload="startTime()">
-    <header>
-      <nav>
-	<ul class="icon">
-	  <li> <a class="logolink" href="https://github.com/johnsoupir"> <img src="Images/spinner.webp" alt="github logo" height="15" width="50"  /> </a>  </li>
-          <li> John Soupir </li>
-	</ul>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="codedemo.html">Code Demo</a></li>
-        </ul>
-	<ul class="icon">
-	  <li> <a class="logolink" href="https://github.com/johnsoupir"> <img src="gitlogo.png" alt="github logo" height="20" width="20"  /> </a>  </li>
-	  <li> <a class="logolink" href="https://github.com/johnsoupir"> <img src="Images/youtube-logo.png" alt="github logo" height="25" width="30"  /> </a>  </li>
-	</ul>
-      </nav>
-    </header>
-
-    <h1 class="welcome-text">John Soupir</h1> 
-    <img class="profilePhoto" src="Images/soupir.jpg" alt="Profile Photo"/>
-    <div class="overlay">
-    <p class="welcome-text" style="font-size: 1.5em; padding: 10px;">Electrical Engineer</p>
-    <p class="welcome-text" style="font-size: 0.8em; top: 0px; padding: 0px 20px;">Hi, I'm John Soupir, a senior Electrical Engineering student at the University of Mary in Bismarck North Dakota. Explore this site to learn more about me! </p>
-    </div>
-
-    <article>
-    </article>
-    <div id="txt" style="color: white;"></div>
-  </body>
-</html>
+<div class="featured-projects">
+  <h1>Featured Projects</h1>
+  <div class="project-cards">
+    {% include project-card.html 
+      image="/Projects/marvin/Images/marvin.png" 
+      title="Marvin: Robot Assistant" 
+      introText="Automation hubs like Google Home and Amazon Echo are cool. Why not build your own?" 
+      link="/Projects/marvin/" 
+    %}
+    {% include project-card.html 
+      image="/Projects/ascii-rickroll/Images/rickroll.png" 
+      title="ASCII Rickroll in BASH!" 
+      introText="A self-contained ASCII Rickroll written in BASH. Great as an error message or pentesting payload." 
+      link="/Projects/ascii-rickroll/" 
+    %}
+    {% include project-card.html 
+      image="/Projects/hr1/Images/hr1.png" 
+      title="HR-1 The Humanoid Robot" 
+      introText="A Bluetooth‑controlled humanoid robot built with Arduino and hobby servos." 
+      link="/Projects/hr1/" 
+    %}
+  </div>
+</div>
 
 
