@@ -1,0 +1,12 @@
+# Jekyll generated site
+_site/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor backup and swap files
+*~
+*.swp
+*.swo
+
