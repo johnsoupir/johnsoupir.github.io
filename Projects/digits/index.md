@@ -7,36 +7,33 @@ image: "/Projects/digits/Images/digits.png"
 
 ## Overview
 
-This project is a neat C program that counts the occurrences of every digit (0–9) in a number you provide and then visualizes the results as a graph. Whether you're learning C or just looking for a quick utility to analyze numbers, this program is both educational and fun to use.
+A cool little C program to count the occerances of every digit from zero to your chosen number. 
+This program is optimized for speed and can quickly process large numbers, even into the millions.
+
+While walking through the engineering building one day, I stumbled upon some friends working on a combinatorics problem. Their goal was to determine how many times each digit appears while counting to one million. Being the helpful fellow I am, I pulled out my laptop and started brute-forcing the problem with a C program. While the resulting program was, unfortunately, not an acceptable solution, it did produce the correct count—along with a cool fractal.
 
 {% include figure.html src=page.image alt="Digit Occurrence Graph" caption="Figure 1: Sample graph showing digit frequencies" %}
 
-## How It Works
+## Play with it!
 
-The program reads an input number, iterates over each digit, and tallies the frequency of each digit from 0 to 9. Once the counting is complete, it outputs the results in a graphical format (either by printing a text-based graph to the console or generating an image, depending on your implementation).
-
-## Compilation and Usage
-
+First, obtain the files. They are found on my [Github](https://github.com/johnsoupir/digits) and here as a [zip]({{ page.download }}).
 To compile and run the program on Linux, follow these steps:
 
-1. Open a terminal and navigate to the project's directory.
+1. Navigate to the project directory in your terminal.
 2. Compile the C source code using GCC:
 ```bash
 gcc -o digits digits.c
 ```
 3. Run the program:
 ```bash
-./digits
+./digits <end-number>
 ```
 
-*Tip:* Ensure that you have GCC installed. On most Linux systems, you can install it via your package manager (e.g., `sudo apt install gcc` on Ubuntu).
+Output is saved in a file, and is of the form: 
 
-## Download
+```<current number> <zeros in current> <zeros running total> <ones in current> <ones running total> ... <nines in current> <nines running total>``` 
 
-If you'd like to review or modify the code, you can download the complete project as a ZIP archive:
+Plotting the count of each digit as the number gets larger produces the plot seen above. As the number continues to grow the pattern repeats (for each 10x).
 
-[Download Digit Occurrence Graphing ZIP]({{ page.download }})
-
-## Customization and Contributions
-
-Feel free to experiment with the source code! You might extend the functionality by improving the graph output, adding error handling for invalid inputs, or integrating the program with other tools. Contributions and suggestions are welcome!
+### Cool video
+  A video of the results in an animated GNUPlot: [YouTube](https://youtu.be/xAPqNJ5Vm3Q)
