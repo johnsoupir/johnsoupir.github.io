@@ -127,7 +127,7 @@ body {
 .content {
   flex: 1;
   /* Tinted overlay that fills the entire content container */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   min-height: 100vh;   /* Ensure it covers at least the full viewport height */
   padding: 20px;       /* Inner padding for content */
 }
