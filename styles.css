@@ -138,6 +138,20 @@ body {
   text-align: center;
 }
 
+/* Scale images to stay inside the container */
+.content img {
+  max-width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Center figure caption */
+.custom-figure figcaption {
+  text-align: center;
+}
+
 /* Featured Projects Section */
 .featured-projects {
   margin-top: 5vh; /* 5% of the viewport height */
