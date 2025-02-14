@@ -13,9 +13,10 @@ Below is a video demonstration of HR-1:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9eYvukYPWd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## About
+## Programming
 
-I built HR-1 in 2016 as my first foray into robotics and Arduino programming. The design was heavily inspired by the need to create a robot that looks as human-like as possible while keeping costs low. All of the code was written in the Arduino IDE and was inspired by the Kewlsoft LED example, where a letter is sent to select the servo and an integer (from 0 to 180) specifies the angle.
+This project was my first experience with programming. Coming into this project with no programming background was a challenge, but many YouTube tutorials and late nights spent copy pasting code from the internet eventually paid off.
+The final iteration of the code was inspired by the Kewlsoft LED example. A letter is sent to select the servo and an integer (from 0 to 180) specifies the angle.
 
 ## Parts
 
@@ -28,4 +29,4 @@ Below is a list of the key components used in HR-1:
 | Battery 1       | 6V Lead Acid       |
 | Battery 2       | 12V Lead Acid      |
 | Drive Motor     | 12V Brushed        |
-| Bluetooth       | HC-5               |
+| Bluetooth       | HC-5 Module        |
